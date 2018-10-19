@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>My first Js</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+ 
+    </head>
+    
+    <body>
+        <section class="section-convidados">
+
+            <label>Homens:</label>
+            <input type="number" min="0" max="999" value="0" class="numero1" onkeyup="clica()">
+            <label>Mulheres:</label>
+            <input type="number" min="0" max="999" value="0" class="numero2" onkeyup="clica()"></br>
+
+        </section>
+
+        <section class="section-carnes">
+
+        <label>Carne de Gato</label>
+        <input type="number" class="gato" name="gato" value="0" min="0" max="999"  onkeyup="operadorGlobal()" required></br>
+        <label>Carne de Cachorro</label>
+        <input type="number" class="cachorro" name="cachorro" value="0" min="0" max="999" onkeyup="operadorGlobal()" required><br>
+        <label>Carne de Leão</label>
+        <input type="number" class="leao" name="Leão" value="0" min="0" max="999" onkeyup="operadorGlobal()" required><br>
+
+    </section>
+
+
+        <section class="section-resultados">
+            <div>
+                <span>Convidados:</span>
+                <span class="box-convidados">0</span>
+            </div>
+            
+            <div>
+                <span>Peso Total de grama por pessoa:</span>
+        
+                <span class="somagramas">0</span>
+                <span class="hide-span">Passou do limite Necessário!</span>
+            </div>
+
+            <div>
+                <span> Calculo das Gramas de carnes:</span>
+                <span class="total-grama-carnes" value="0">0</span>
+            </div>
+        </section>
+
+
+
+            
+
+            
+
+
+
+
+    </body>
+
+    <script src="script.js"></script>
+</html>
